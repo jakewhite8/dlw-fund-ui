@@ -12,7 +12,9 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "lint": "./node_modules/.bin/eslint ./src"
+
   },
   "dependencies": {
     "bootstrap": "^5.1.1",

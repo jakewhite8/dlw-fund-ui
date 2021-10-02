@@ -1,9 +1,10 @@
 import * as React from 'react'
+import NavBar from './navBar'
 
 const Layout = ({ pageTitle, children }) => {
   return (
     <div>
-      {/*navigation bar*/}
+      <NavBar selectedPage={pageTitle}></NavBar>
       <main>
         <h1>{pageTitle}</h1>
         {children}

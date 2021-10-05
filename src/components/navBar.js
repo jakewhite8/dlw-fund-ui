@@ -9,7 +9,7 @@ import './navBar.css'
 const NavBar = ({selectedPage}) => {
   return (
     <div>
-    <h1></h1>
+    <h1>{selectedPage}</h1>
       <ButtonToolbar className="custom-btn-toolbar">
         <ul>
           <li><Link to="/">Home</Link></li>

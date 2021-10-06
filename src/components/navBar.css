@@ -5,3 +5,7 @@
 .custom-btn-toolbar > .btn {
   margin-right: 1rem;
 }
+
+.failure-button {
+  background-color: purple;
+}

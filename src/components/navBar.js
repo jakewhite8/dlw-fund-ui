@@ -1,6 +1,9 @@
 import * as React from 'react'
-import ButtonToolbar from 'react-bootstrap/ButtonToolbar';
-import Button from 'react-bootstrap/Button'
+// import ButtonToolbar from 'react-bootstrap/ButtonToolbar';
+// import Button from 'react-bootstrap/Button'
+import Navbar from 'react-bootstrap/Navbar';
+import Container from 'react-bootstrap/Container';
+
 // import { Link } from 'gatsby'
 
 
@@ -9,13 +12,21 @@ import './navBar.css'
 const NavBar = ({selectedPage}) => {
   return (
     <div>
-    <h1>{selectedPage}</h1>
-      <ButtonToolbar className="custom-btn-toolbar">
-        <ul>
-          <li><Button bsPrefix='failure-button'>Home</Button></li>
-          <li><Button variant='success'>Photos</Button></li>
-        </ul>
-      </ButtonToolbar>
+      <h1>{selectedPage}</h1>
+      <Navbar bg="dark" variant="dark">
+          <Container>
+            <Navbar.Brand href="#home">
+              <img
+                alt=""
+                src="/logo.svg"
+                width="30"
+                height="30"
+                className="d-inline-block align-top"
+              />{' '}
+            React Bootstrap
+            </Navbar.Brand>
+          </Container>
+        </Navbar>
     </div>
   )
 }

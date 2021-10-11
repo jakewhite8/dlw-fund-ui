@@ -2,6 +2,7 @@ import * as React from 'react'
 // import ButtonToolbar from 'react-bootstrap/ButtonToolbar';
 // import Button from 'react-bootstrap/Button'
 import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
 import DLWLogo from '../images/dlwlogo.jpeg'
 // import { Link } from 'gatsby'
@@ -15,7 +16,7 @@ const NavBar = ({selectedPage}) => {
       <h1>{selectedPage}</h1>
       <Navbar bg="dark" variant="dark">
           <Container>
-            <Navbar.Brand href="#home">
+            <Navbar.Brand href="/">
               <img
                 alt=""
                 src={DLWLogo}
@@ -23,8 +24,9 @@ const NavBar = ({selectedPage}) => {
                 height="30"
                 className="d-inline-block align-top"
               />{' '}
-            React Bootstrap
+            Home
             </Navbar.Brand>
+            <Nav.Link href="/photos">Photos</Nav.Link>
           </Container>
         </Navbar>
     </div>

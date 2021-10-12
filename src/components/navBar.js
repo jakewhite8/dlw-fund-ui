@@ -14,7 +14,7 @@ const NavBar = ({selectedPage}) => {
   return (
     <div>
       <h1>{selectedPage}</h1>
-      <Navbar bg="dark" variant="dark">
+      <Navbar className="nav-bar" variant="dark">
           <Container>
             <Navbar.Brand href="/">
               <img

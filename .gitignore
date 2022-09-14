@@ -2,3 +2,6 @@ node_modules/
 .cache/
 public
 src/components/.DS_Store
+src/styles/.DS_Store
+src/pages/.DS_Store
+src/.DS_Store

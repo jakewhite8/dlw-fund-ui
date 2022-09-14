@@ -6,13 +6,12 @@ import Container from 'react-bootstrap/Container';
 import DLWLogo from '../images/dlwlogo.jpeg'
 import { Link } from 'gatsby'
 
-
-import './navBar.css'
+import * as navBarStyles from '../styles/navBar.module.css'
 
 const NavBar = () => {
   return (
     <div>
-      <Navbar className="nav-bar" variant="dark">
+      <Navbar className={navBarStyles.navBar} variant="dark">
           <Container>
             <Link to ="/">
               <img
